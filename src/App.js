@@ -6,6 +6,8 @@ import NavBar from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Header from './components/Header';
+import Portfolio from './components/Projects';
+
 
 function App() {
   return (
@@ -32,6 +34,9 @@ function App() {
 </br>
 
 <About/>
+<br>
+</br>
+<Portfolio/>
 <br>
 </br>
 <ContactForm/>
