@@ -41,7 +41,7 @@ function ContactForm() {
 
     //Return JSX to display
     return(
-        <section>
+        <section id='contact'>
              <h1>Contact me</h1>
              <p>Please fill out the form and get in touch!</p>
       <form id="contact-form" onSubmit={handleSubmit}>
@@ -62,7 +62,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Send!</button>
+        <button type="submit">Send</button>
       </form>
 
         </section>
