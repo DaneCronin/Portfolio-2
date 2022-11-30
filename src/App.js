@@ -4,10 +4,11 @@ import './App.css';
 //Import components 
 import NavBar from './components/Nav';
 import About from './components/About';
+import ContactForm from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,6 +27,9 @@ function App() {
 <NavBar/>
 
 <About/>
+<br>
+</br>
+<ContactForm/>
 
 
     </div>

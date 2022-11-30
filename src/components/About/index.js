@@ -1,11 +1,15 @@
 import React from 'react';
+// import CroninDane from '../../assets/images/CroninDane.jpg';
 
 const About = () => {
     return (
         <div name="about">
          <div>
             <div>
-            <p> About</p>
+            <h1> About</h1>
+            </div>
+            <div>
+                {/* <img src= {CroninDane} alt="profile photo"/> */}
             </div>
             <p> 
             Dane Cronin is a Boulder, Colorado based photographer specializing in cycling photography,architectural,
