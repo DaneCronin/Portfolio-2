@@ -31,7 +31,17 @@ function NavBar (props) {
             </span>
             </a>
           </li>
-          {categories.map((category) => (
+
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <a href="#projects"> <span onClick={() => setContactSelected(true)}>
+              Projects
+            </span>
+            </a>
+          </li>
+
+
+        
+          {/* {categories.map((category) => (
             <li
               className={`mx-1 ${
                 currentCategory.name === category.name && !contactSelected && 'navActive'
@@ -47,7 +57,7 @@ function NavBar (props) {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
       </nav>
     </header>
