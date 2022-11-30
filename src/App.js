@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
       </header> */}
 {/* ADDING NEW PORTFOLIO CONTENT BELOW */}
 <NavBar/>
+
+<Header/>
+<br>
+</br>
 
 <About/>
 <br>
