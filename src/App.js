@@ -7,6 +7,7 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Projects';
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
 <br>
 </br>
 <ContactForm/>
-
+<Footer/>
 
     </div>
   );
