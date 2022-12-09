@@ -12,7 +12,7 @@ function NavBar (props) {
 
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-1 opacity-85">
       <h2>
         <a href="/">
           Dane Cronin

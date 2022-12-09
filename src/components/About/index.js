@@ -4,11 +4,13 @@ import CroninDane from '../../assets/images/CroninDane.jpg';
 const About = () => {
     return (
         <section id='about'>
-        <div name="about" className="my-2">
+        <div name="about" className= "max-w-screen-lg p-4 mb-8 mx-auto flex flex-col justify-center w-full h-full">
          <div>
-            <div>
-            <h1> About</h1>
-            </div>
+         <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4">
+           About
+          </p>
+        </div>
             <div>
             <img src={CroninDane} className="my-2" style={{ width: "25%" }} alt="profile avatar of Dane Cronin" />
                
