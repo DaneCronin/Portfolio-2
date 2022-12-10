@@ -5,7 +5,7 @@ import './App.css';
 import NavBar from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
-import Header from './components/Header';
+import Home from './components/Home';
 import Portfolio from './components/Projects';
 import Footer from "./components/Footer";
 
@@ -30,7 +30,7 @@ function App() {
 {/* ADDING NEW PORTFOLIO CONTENT BELOW */}
 <NavBar/>
 
-<Header/>
+<Home/>
 <br>
 </br>
 

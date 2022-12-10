@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Import images to use in About section
 import CroninDane from '../../assets/images/CroninDane.jpg';
 
 const About = () => {

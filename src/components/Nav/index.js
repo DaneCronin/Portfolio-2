@@ -12,27 +12,27 @@ function NavBar (props) {
 
 
   return (
-    <header className="flex-row px-1 opacity-85">
-      <h2>
+    <header className="flex-row">
+      <h2 className='ml-2'>
         <a href="/">
           Dane Cronin
         </a>
       </h2>
       <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
+        <ul className="flex-row bg-zinc-900 ">
+          <li className="mx-2 bg-zinc-900 duration-300 hover:scale-105">
             <a  href="#about" onClick={() => setContactSelected(false)}>
               About 
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          <li className={`mx-2 bg-zinc-900 duration-300 hover:scale-105 ${contactSelected && 'navActive'}`}>
             <a href="#contact"> <span onClick={() => setContactSelected(true)}>
               Contact
             </span>
             </a>
           </li>
 
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          <li className={`mx-2 bg-zinc-900 duration-300 hover:scale-105 ${contactSelected && 'navActive'}`}>
             <a href="#projects"> <span onClick={() => setContactSelected(true)}>
               Projects
             </span>

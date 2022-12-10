@@ -84,15 +84,11 @@ function Footer () {
         ))}
       </ul>
     </div>
-    <p>Dane Cronin ©2022</p>
+    <p>Designed and Developed by Dane Cronin ©2022</p>
     </footer>
   );
 };
 
-//       <p>Dane Cronin ©2022</p>
-//     </footer>
-//   )
-// }
 
 // Export component
 export default Footer;
