@@ -1,12 +1,22 @@
 import React from 'react';
-import HeroImage from '../../assets/images/IndianPeaksSunset.jpg'
+// import HeroImage from '../../assets/images/IndianPeaksSunset.jpg'
+import Type from "./Type";
 
-const Header = () => {
+const Home = () => {
     //Return JSX to display Header/Hero section
     return(
-        <section>
+        <section className='bg-zinc-900 object-cover'>
+           
+            
+       {/* <img src={HeroImage} alt='Mountain Sunset'/>   */}
+       <div>
+        <h1 className='text-white text-6xl'>Hi. I am Dane Cronin</h1>
+       </div>
 
-       <img src={HeroImage} alt='Mountain Sunset' style={{ width: "100%" }}/>  
+       <div style={{ padding: 50, textAlign: "left" }} className='text-6xl'>
+                <strong><Type/></strong>
+              </div>
+              
         </section>
     )
 };
@@ -14,4 +24,4 @@ const Header = () => {
 
 
 
-export default Header;
+export default Home;

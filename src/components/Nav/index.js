@@ -1,14 +1,11 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function NavBar (props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-    contactSelected,
-    setContactSelected
-  } = props;
+
+  //deconstruct props
+  const {navSelect} = props;
+
 
 
   return (
@@ -19,45 +16,25 @@ function NavBar (props) {
         </a>
       </h2>
       <nav>
-        <ul className="flex-row bg-zinc-900 ">
+        <ul className="nav-links flex-row bg-zinc-900 ">
           <li className="mx-2 bg-zinc-900 duration-300 hover:scale-105">
-            <a  href="#about" onClick={() => setContactSelected(false)}>
+            <a  name='about' href="#about" onClick= {navSelect}>
               About 
             </a>
           </li>
-          <li className={`mx-2 bg-zinc-900 duration-300 hover:scale-105 ${contactSelected && 'navActive'}`}>
-            <a href="#contact"> <span onClick={() => setContactSelected(true)}>
+          <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
+            <a name='contact' onClick={navSelect} href="#contact" > 
               Contact
-            </span>
+           
             </a>
           </li>
 
-          <li className={`mx-2 bg-zinc-900 duration-300 hover:scale-105 ${contactSelected && 'navActive'}`}>
-            <a href="#projects"> <span onClick={() => setContactSelected(true)}>
+          <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
+            <a name='projects' href="#projects" onClick={navSelect}>
               Projects
-            </span>
             </a>
           </li>
 
-
-        
-          {/* {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))} */}
         </ul>
       </nav>
     </header>

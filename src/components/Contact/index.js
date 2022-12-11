@@ -41,10 +41,8 @@ function ContactForm() {
 
     //Return JSX to display
     return (
-      <div
-      id="contact"
-      className="w-full h-screen"
-    >
+      <section id="contact">
+      
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4">
@@ -96,7 +94,8 @@ function ContactForm() {
           </form>
         </div>
       </div>
-    </div>
+  
+    </section>
     )
 };
 
