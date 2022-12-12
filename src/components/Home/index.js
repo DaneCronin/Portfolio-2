@@ -28,7 +28,7 @@ const Home = (props) => {
 
 
                 <a name='about' href="#about" onClick={aboutBtnHandler}
-                    className="text-white text-3xl px-6 py-3 my-2 flex justify-center duration-300 hover:scale-105 rounded-md cursor-pointer"
+                    className="text-sky-500 text-3xl px-6 py-3 my-2 flex justify-center duration-300 hover:scale-105 rounded-md cursor-pointer"
                 >
                     Learn More
                 </a>
