@@ -7,13 +7,29 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+
 
 
 This project was bootstrapped with [Create React App].
 
-## Available Scripts
+  ## Table of Contents:
+  * [Description](#Description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
+  * [License](#License)
+  * [Questions?](#questions)
 
+  ## Description
+   This is a fully-responsive portfolio built with React to showcase the latest projects I have been working on.
+   
+  ## Installation
+ 
+ First clone this repo to your local directory and install dependencies by running:
+
+ ### `npm i`
+ 
 In the project directory, you can run:
 
 ### `npm start`
@@ -24,24 +40,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-#Technology Used
+## Usage
+
+## Technologies Used
 
 This project was built using these technologies.
 
 - React.js
 - Node.js
 - Express.js
+- TailwindCss
 - CSS3
+- JS
+
 
 
 ## Features
@@ -52,7 +68,30 @@ This project was built using these technologies.
 
 **📱 Fully Responsive**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+ 
+  ## Contributors
+
+  Dane Cronin
+
+
+  ## License
+  
+  MIT License
+
+  For more information go to: [MIT License](https://choosealicense.com/licenses/mit/)
+
+  ## Questions?
+
+  *For any questions, please contact me through the information below:*
+ 
+  GitHub: [DaneCronin](https://github.com/DaneCronin)
+
+  Email: DaneCronin@gmail.com
+
+  Link to repo on GitHub: https://github.com/DaneCronin/Book-Search
+
 
 
 
