@@ -32,8 +32,11 @@ code {
   --font-family: Helvetica, Arial, sans-serif;
   --primary-bgcolor: #fff;
   --font-color: #999;
-  --border: 3px solid #76767; 
+  --border: 3px solid #76767;
+
+   
 }
+
 
 body {
   background-color: var(--primary-bgcolor);
@@ -143,6 +146,7 @@ header nav ul li a:hover {
   justify-content: center;
   opacity: 0;
 }
+
 
 
 

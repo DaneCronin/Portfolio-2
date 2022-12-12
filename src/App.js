@@ -11,12 +11,29 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  const [contactSelected, setContactSelected] = useState();
+  const [contactSelected, setContactSelected] = useState('about');
 
 
-    // Sets selected nav element to active 
+  // Sets selected nav element to active 
   const selectedHandler = (e) => {
-    if(e.target.className !== 'active') {
+    if (e.target.className !== 'active') {
+      const children = document.querySelector('.nav-links').children;
+      for (const el of children) {
+        const children = el.children;
+        for (const el of children) {
+          if (el.className === 'active') el.className = 'not';
+        }
+      }
+      e.target.className = 'active';
+      setContactSelected(e.target.name);
+    }
+  };
+
+   // Detects if the about button in the header was pressed
+  // If so, sets about in nav to selected
+  const aboutBtnHandler = (e) => {
+    if(e.target.className === 'button-wrapper') {
+      setContactSelected('about');
       const children = document.querySelector('.nav-links').children;
       for (const el of children) {
         const children = el.children;
@@ -24,30 +41,32 @@ function App() {
           if(el.className === 'active') el.className = 'not';
         }
       }
-      e.target.className = 'active';
-      setContactSelected(e.target.name);
+      document.querySelector('a[name="about"]').className = 'active';
     }
   }
 
 
   return (
+    <main>
 
-    <div>
+      <Home aboutBtnHandler = {aboutBtnHandler} />
+
       <NavBar
-       navSelect={selectedHandler}
-        />
-  <main>
-  {contactSelected === 'about' 
-      ? <About/> 
-      : contactSelected === 'projects' 
-      ? <Projects/> 
-      : contactSelected === 'contact'
-      ? <ContactForm/>
-      : 
-      <Home/> }
-</main>
-<Footer/>
-  </div>
+        navSelect={selectedHandler}
+      />
+        {contactSelected === 'about'
+          ? <About />
+          : contactSelected === 'projects'
+            ? <Projects />
+            : contactSelected === 'contact'
+              ? <ContactForm />
+              :
+              <Home />}
+        <Footer/>
+   
+
+    
+    </main>
   );
 }
 

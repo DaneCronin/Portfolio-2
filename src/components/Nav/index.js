@@ -9,7 +9,8 @@ function NavBar (props) {
 
 
   return (
-    <header className="flex-row">
+  
+    <header className="flex-row sticky top-0 z-30">
       <h2 className='ml-2'>
         <a href="/">
           Dane Cronin
@@ -22,18 +23,20 @@ function NavBar (props) {
               About 
             </a>
           </li>
-          <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
-            <a name='contact' onClick={navSelect} href="#contact" > 
-              Contact
-           
-            </a>
-          </li>
 
           <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
             <a name='projects' href="#projects" onClick={navSelect}>
               Projects
             </a>
           </li>
+
+          <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
+            <a name='contact' onClick={navSelect} href="#contact" > 
+              Contact
+            </a>
+          </li>
+
+        
 
         </ul>
       </nav>
