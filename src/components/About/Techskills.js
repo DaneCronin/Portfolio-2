@@ -7,6 +7,7 @@ import {
     DiNodejs,
     DiMongodb,
     DiGit,
+    DiCss3,
   } from "react-icons/di";
 
   function TechSkill () {
@@ -31,6 +32,9 @@ import {
             <DiGit />
           </div>
         
+          <div xs={4} md={2} className="tech-icons">
+            <DiCss3/>
+          </div>
         </div>
       );
   };
