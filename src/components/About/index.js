@@ -6,7 +6,7 @@ import CroninDane from '../../assets/images/CroninDane.jpg';
 const About = () => {
     return (
         <section id='about'>
-        <div name="about" className= "max-w-screen-lg p-4 mb-8 mx-auto flex flex-col justify-center" style = {{height:"100vh"}}>
+        <div name="about" className= "max-w-screen-lg p-4 mb-8 mt-10 mx-auto flex flex-col justify-content-center" style = {{height:"100vh"}}>
          <div>
          <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4">

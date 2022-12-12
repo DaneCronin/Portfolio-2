@@ -56,7 +56,7 @@ function Footer () {
 
   // JSX
   return (
-    <footer className='footer'>
+    <footer className='footer sticky-bottom'>
       
 
 

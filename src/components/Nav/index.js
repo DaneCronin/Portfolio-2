@@ -16,7 +16,7 @@ function NavBar (props) {
           Dane Cronin
         </a>
       </h2>
-      <nav>
+      <nav className='flex-row'>
         <ul className="nav-links flex-row bg-zinc-900 ">
           <li className="mx-2 bg-zinc-900 duration-300 hover:scale-105">
             <a  name='about' href="#about" onClick= {navSelect}>
@@ -35,8 +35,6 @@ function NavBar (props) {
               Contact
             </a>
           </li>
-
-        
 
         </ul>
       </nav>

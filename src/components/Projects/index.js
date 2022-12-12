@@ -67,8 +67,8 @@ const Portfolio = () => {
   //JSX to display 
   return (
     <section id="projects">
-    <div name="portfolio" className="md:h-screen mx-auto" >
-      <div className="max-w-screen-lg p-3 mx-auto flex flex-col justify-center">
+    <div name="portfolio" className="md:h-screen mt-8 py-6 mb-8">
+      <div className="max-w-screen-lg p-3 mx-auto flex flex-col justify-content-center">
         <div className="pb-8">
           <h1 className="text-4xl font-bold inline border-b-4 border-grey-800">
             Portfolio Projects
@@ -78,7 +78,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 ">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 flex">
           {projectPortfolio.map(({ id, image, languages, appName, repoLink, deploy }) => (
             <div key={id} className="shadow-md shadow-slate-600 rounded-md duration-300 hover:scale-105 ">
               <div>
@@ -93,7 +93,7 @@ const Portfolio = () => {
                <p className='text-xs'>{languages}</p>
                 <h2 className='text-zinc-700 text-xl py-2'><strong>{appName}</strong> </h2>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center overflow-auto">
                 <a target="_blank" rel="noreferrer"
                   href={repoLink}
                   className="project-button duration-300 hover:scale-105 rounded-md"
