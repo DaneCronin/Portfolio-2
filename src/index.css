@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 
-/* body {
+
+ /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -17,7 +18,7 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+} */ 
 
 /* -- CSS STYLING FROM ORIGINAL PORTFOLIO --*/
 
@@ -32,9 +33,10 @@ code {
   --primary-bgcolor: #fff;
   --font-color: #999;
   --border: 3px solid #76767;
-  --secondary-color: teal;
+
    
 }
+
 
 body {
   background-color: var(--primary-bgcolor);
@@ -65,12 +67,7 @@ header {
 header h1 {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: -15px;
- 
 }
-
 
 
 header a {
@@ -79,7 +76,6 @@ header a {
   color: #999;
   font-weight: bold;
   font-size: 36px;
-  
 }
 
 /* Apply Style to Navigation Bar */
@@ -92,24 +88,17 @@ header nav {
 }
 
 header nav ul li {
-  display: inline;
-  padding: 5px;
-  
+  display: inline-flex
 }
 
-header nav ul {
-  background-color: var(--secondary-color);
-  margin-top: 5px;
-  
-}
+
 
 header nav ul li a {
   display: inline-flex;
-  justify-content: center;
-  background-color: var(--secondary-color);
+
   margin: 0 15px;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 18px;
 
 }
 
@@ -126,296 +115,39 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Hero Style Start */
 
-.hero {
-  /* background-image: url("../images/Indian\ Peaks\ Sunset\ 2.jpg"); */
-  height: 600px;
-  background-size: cover;
-  background-position: fixed;
-  width: 100%;
-  
-
-}
-
-/* Hero Style END */
 
 
 /* Projects Section Styling */
 
-.projects-section {
+.project-button {
+  cursor: pointer;
   display: flex;
-  width: 100%;
-  padding: 30px 45px;
-  margin: 25px 0;
-  background-color: rgb(255, 255, 255);
-  overflow: auto;
-  border-bottom: 1px solid #767676;
-}
-
-.projects-section div h2 {
-  display: flex;
-  align-items: center;
-  width: 176px;
-  height: 100%;
-  padding-right: 10px;
-  border-right: 3px solid #767676;
-  font-family: var(--font-family);
-}
-
-.projects-section h3 span {
-  font-family: var(--font-family);
-  padding:10px;
-  background-color: var(--secondary-color);
-  z-index: 2;
-}
-
-.projects-column {
-  margin: 0 auto 0 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 70%;
-}
-
-.projects-section p {
-  padding: px 35px;
-  background-color: white;
-}
-
-.run-buddy h3 span {
-  position: absolute;
-  
-  padding: 10px;
-  
-  margin-top: 155px;
-  
-}
-
-
-.run-buddy img{
-  position: relative;
-  height: 400px;
-  object-fit: cover;
-  border: 3px solid #767676;
-  opacity: .7
-  
-}
-
-.run-buddy {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 30px;
-  width: 70%;
-}
-
-.beyond-the-concert img{
-  position: relative;
-  height: 400px;
-  width: 722px;
-  object-fit: cover;
-  border: 3px solid #767676;
-  opacity: .7;
-  margin-bottom: 7px;
-  
-}
-
-.beyond-the-concert h3 span {
-  position: absolute;
-  
-  padding: 10px;
-  
-  margin-top: 155px;
-  
-}
-.beyond-the-concert {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 30px;
-  width: 70%;
-}
-
-.photo-portfolio h3 span{
-  position: absolute;
-  padding: 10px;
-  margin-top: 155px;
-  
-  
-}
-
-.photo-portfolio img{
-  position: relative;
-  height: 200px;
-  object-fit: cover;
-  border: 3px solid #767676;
-  opacity: .7;
-  
-}
-
-
-
-
-.photo-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 15px 0 30px;
-}
-
-.more-work {
-  position: relative;
-  display: flex;
-  flex: wrap;
-  justify-content: flex-start;
-  height: 200px;
-  margin: 20px auto 0 30px;
-  
-
-}
-
-.more-work h3 span{
-  position: absolute;
-  margin-top: 55px;
- 
-}
-
-
-/* About Section Styling */
-
-.about-section {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  margin: 15px 0;
-  background-color: rgb(255, 255, 255);   
-  border-bottom: 1px solid #767676;
-}
-
-.about {
-  margin: 0 auto 30px auto;
-  overflow: auto;
-  
-}
-
-.about-section div h2 {
-      display: flex;
-      align-items: center;
-      width: 200px;
-      height: 100%;
-      padding: 0 10px 0 30px;
-      border-right: 3px solid #767676;
-      font-family: var(--font-family);
-  }
-
-
-
-
-.about img {
-  width: 40%;
-  padding: 0 25px;
-  float: left;
- 
-}
-
-
-.about p {
-  text-align: left;
-  padding: 10px 25px;
-  line-height: 1.2;
-  font-size: 17px;
-  font-family: var(--font-family);
-  
-}
-
-
-/* Resume Section Styling */
-
-.resume-section {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  margin: 15px 0;
-  background-color: var(--secondary-color);
-  
-  
-}
-
-.resume-section h2 {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  height: 100px;
-  padding: 0 10px 0 30px;
-  border-right: 3px solid #767676;
-  font-family: var(--font-family);
-  
-}
-
-.resume-section a {
-  
-  margin: 0 auto 0 30px;
-  font-size: 24px;
-  font-style: italic;
-  color: #999;
-  text-decoration: none;
-
-}
-
-
-
-/* Contact Section Styling */
-
-.contact-section .section-title {
-  font-family: var(--font-family);
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: auto;
-  width: 100%;
-  padding: 25px;
-  margin: 15px 0;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #767676;
-}
-
-.contact-section a {
-  font-family: var(--font-family);
-  color: var(--font-color);
-}
-
-
-.social-contact {
-  margin: 0 auto 0 30px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 70%;
-}
-
-.social-contact a {
-  padding: 5px;
-}
-
-.social-contact h3 {
-  padding: 0 5px;
-  font-size: 24px;
+  gap: 5px;
+  margin: 10px;
+  border: 0.2rem solid var(--primary-text);
+  border-radius: 10px;
+  padding: 5px 10px;
   font-weight: bold;
-  font-family: var(--font-family);
+  color: var(--primary-text);
 }
 
-.contact-info {
+.project-button:hover {
+  color: zinc;
+  transition: all 0.3s;
+  background-color: var(--primary-text);
+}
+
+.project-button-wrapper {
+  z-index: 10;
+  position: absolute;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border-right: 3px solid #767676;
-  padding-right: 16px;
-  line-height: 1.5;
-  
+  justify-content: center;
+  opacity: 0;
 }
+
+
 
 
 
@@ -441,40 +173,7 @@ footer div {
 
 
 
-/* MEDIA QUERY FOR SMALLER DESKTOP AND MOBILE */
 
-@media screen and (max-width: 980px) {
-  /* this will apply to any screen smaller than 980px */
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-  /* this will apply to any screen smaller than 768px */
-  
-    .section-title h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-  
-    article {
-      flex: 1 100%;
-  
-    }
-  
-    .projects-section img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .header nav ul li {
-      flex: 1 50%;
-    }
-  
   
 
 
-}

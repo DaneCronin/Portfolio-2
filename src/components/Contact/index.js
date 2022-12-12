@@ -40,34 +40,63 @@ function ContactForm() {
 
 
     //Return JSX to display
-    return(
-        <section id='contact'>
-             <h1>Contact me</h1>
-             <p>Please fill out the form and get in touch!</p>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+    return (
+      <section id="contact">
+      
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4">
+            Contact
+          </p>
+          <p className="py-6">Submit the form and get in touch!</p>
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <form
+            onSubmit={handleSubmit}
+            action="mailto:danecronin@gmail.com"
+            className="flex flex-col w-full md:w-1/2"
+          >
+            <input
+              type="text"
+              name="name"
+              defaultValue={name}
+              onBlur={handleChange}
+              placeholder="Enter your name"
+              className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              defaultValue={email}
+              onBlur={handleChange}
+              placeholder="Enter your Email"
+              className="p-2 bg-transparent border-2 rounded-md focus:outline-none my-4"
+              required
+            />
+            <textarea
+              type="text"
+              name="message"
+              defaultValue={message}
+              onBlur={handleChange}
+              rows="10"
+              className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              required
+            />
+            {errorMessage && (
+              <div className="pb-6">
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <button className="text-100  bg-zinc-900  px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-700">
+              Reach out
+            </button>
+          </form>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button type="submit">Send</button>
-      </form>
-
-        </section>
-    );
-
+      </div>
+  
+    </section>
+    )
 };
 
 export default ContactForm;
