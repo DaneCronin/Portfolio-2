@@ -36,6 +36,12 @@ function NavBar (props) {
             </a>
           </li>
 
+          <li className='mx-2 bg-zinc-900 duration-300 hover:scale-105'>
+            <a name='resume' onClick={navSelect} href="#resume" > 
+              Resume
+            </a>
+          </li>
+
         </ul>
       </nav>
     </header>

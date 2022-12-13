@@ -10,7 +10,7 @@ import {
     DiCss3,
     DiHtml5,
     DiPhotoshop,
-    DiMysql
+    // DiMysql
   } from "react-icons/di";
   import {SiTailwindcss} from 'react-icons/si';
  
@@ -46,9 +46,9 @@ import {
           <div className='duration-300 hover:scale-105'>
             <DiPhotoshop size= {64}/>
           </div>
-          <div className='duration-300 hover:scale-105'>
+          {/* <div className='duration-300 hover:scale-105'>
             <DiMysql size= {64}/>
-          </div>
+          </div> */}
           <div className='duration-300 hover:scale-105'>
             <SiTailwindcss size= {64}/>
           </div>
