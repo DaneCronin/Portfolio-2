@@ -48,6 +48,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Usage
 
+![image](https://user-images.githubusercontent.com/107944830/207397342-46fa27d1-893a-47f9-8869-68f76449e345.png)
+
+You may also view my portfolio [HERE](href="https://danecronin.github.io/Portfolio-2/")
+
 ## Technologies Used
 
 This project was built using these technologies.
