@@ -27,6 +27,7 @@ const Portfolio = () => {
       image: DaneCroninPhoto,
       languages: 'PHOTO PORTFOLIO',
       appName: "Dane Cronin Photography",
+      repoLink: "https://github.com/DaneCronin",
       deploy: "https://www.danecronin.com"
     },
     {
