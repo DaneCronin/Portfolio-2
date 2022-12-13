@@ -6,8 +6,8 @@ import CroninDane from '../../assets/images/CroninDane.jpg';
 
 const About = () => {
     return (
-        <section id='about'>
-            <div name="about" className="max-w-screen-lg p-4 mb-8 mt-10 mx-auto flex flex-col justify-content-center" style={{ height: "100vh" }}>
+        <section id='about' name="about" className="max-w-screen-lg p-4 mb-8 mt-10 mx-auto flex flex-col justify-content-center" style={{ height: "100vh" }}>
+           
                 <div>
                     <div className="pb-8">
                         <h1 className="text-4xl font-bold inline border-b-4">
@@ -28,14 +28,14 @@ const About = () => {
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 flex float-left">
 
-                    <h1 className="text-4xl font-bold inline border-b-4">
-                        Professional <strong className="text-sky-500">Skillset </strong>
+                    <h1 className="text-4xl font-bold inline ">
+                        Professional <strong className="text-sky-500 border-b-4">Skillset </strong>
                     </h1>
 
                     <TechSkill />
 
                 </div>
-            </div>
+          
         </section>
 
     );
