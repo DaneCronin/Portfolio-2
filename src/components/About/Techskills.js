@@ -10,14 +10,13 @@ import {
     DiCss3,
     DiHtml5,
     DiPhotoshop,
-    // DiMysql
   } from "react-icons/di";
   import {SiTailwindcss} from 'react-icons/si';
  
   function TechSkill () {
 
     return (
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 flex text-sky-500">
+        <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-8 px-4 flex text-sky-500">
         
           <div className='duration-300 hover:scale-105'>
             <DiJavascript1 size= {64} />
@@ -28,7 +27,7 @@ import {
           <div className='duration-300 hover:scale-105'>
             <DiReact size= {64} />
           </div>
-          <div className='duration-300 hover:scale-105'>
+          <div className= 'duration-300 hover:scale-105'>
             <DiMongodb size= {64}/>
           </div>
          
@@ -46,9 +45,6 @@ import {
           <div className='duration-300 hover:scale-105'>
             <DiPhotoshop size= {64}/>
           </div>
-          {/* <div className='duration-300 hover:scale-105'>
-            <DiMysql size= {64}/>
-          </div> */}
           <div className='duration-300 hover:scale-105'>
             <SiTailwindcss size= {64}/>
           </div>

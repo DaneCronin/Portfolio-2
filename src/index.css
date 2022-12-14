@@ -132,6 +132,23 @@ header nav ul li a:hover {
   opacity: 0;
 }
 
+/* Tech Icons Styling */
+/* .tech-icons {
+  font-size: 4.5em ;
+  margin: 15px ;
+  padding: 10px;
+  opacity: 0.93;
+  border: 1.7px solid #999;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgba(91, 91, 91, 0.137);
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+} */
+
+
 
 
 

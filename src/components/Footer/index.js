@@ -62,7 +62,7 @@ function Footer () {
 
       <div className="hidden lg:flex flex-col top-[70%] fixed">
       <ul>
-        {icons.map(({ id, child, href, style, download }) => (
+        {icons.map(({ id, child, href, style}) => (
           <li
             key={id}
             className={
@@ -74,7 +74,6 @@ function Footer () {
             <a
               href={href}
               className="flex justify-between items-center w-full"
-              download={download}
               target="_blank"
               rel="noreferrer"
             >
@@ -84,7 +83,9 @@ function Footer () {
         ))}
       </ul>
     </div>
+
     <p>Designed and Developed by Dane Cronin ©2022</p>
+    
     </footer>
   );
 };
