@@ -3,7 +3,7 @@ import React from 'react';
 //Importing images to use for projects cards
 import PicMe from '../../assets/images/picme-screenshot.png';
 import DaneCroninPhoto from '../../assets/images/DaneCroninPhoto.png';
-import RunBuddy from '../../assets/images/run-buddy.png';
+import CHUNK from '../../assets/images/Chunkd.png';
 import BookSearch from '../../assets/images/BookSearch.png';
 import JATE from '../../assets/images/JATE.png';
 import portfolioOne from '../../assets/images/portfolio.png';
@@ -32,11 +32,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      image: RunBuddy,
-      languages: 'HTML, CSS',
-      appName: "RunBuddy",
-      repoLink: "https://github.com/DaneCronin/run-buddy",
-      deploy: "https://danecronin.github.io/run-buddy"
+      image: CHUNK,
+      languages: 'REACT, MONGO, EXPRESS, NODE.JS, THREE.JS',
+      appName: "CHUNK'd",
+      repoLink: "https://github.com/PuppetAJ/ReactMC",
+      deploy: "https://chunkd-aj.herokuapp.com/"
     },
     {
       id: 4,
@@ -79,7 +79,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 flex">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
           {projectPortfolio.map(({ id, image, languages, appName, repoLink, deploy }) => (
             <div key={id} className="shadow-md shadow-slate-600 rounded-md duration-300 hover:scale-105 ">
               <div>
