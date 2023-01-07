@@ -11,7 +11,6 @@
 
 
 
-This project was bootstrapped with [Create React App].
 
   ## Table of Contents:
   * [Description](#Description)
@@ -23,7 +22,7 @@ This project was bootstrapped with [Create React App].
   * [Questions?](#questions)
 
   ## Description
-   This is a fully-responsive portfolio built with React to showcase the latest projects I have been working on.
+   This is a fully-responsive portfolio I designed and built with React to showcase the latest projects I have been working on.
    
   ## Installation
  
