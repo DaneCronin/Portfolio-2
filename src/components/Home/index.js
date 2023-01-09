@@ -1,5 +1,4 @@
 import React from 'react';
-// import HeroImage from '../../assets/images/IndianPeaksSunset.jpg'
 import Type from "./Type";
 
 
@@ -17,8 +16,8 @@ const Home = (props) => {
     return (
         <section className='bg-zinc-900 object-cover py-8' style={{ height: "100vh" }}>
             <div>
-                <div className='flex justify-center'>
-                    <h1 className='mt-6 px-6 text-white text-6xl align-content-center'><span className='text-sky-500'><strong>Hi.</strong></span> I am Dane Cronin</h1>
+                <div className='flex justify-center text-center '>
+                    <h1 className='mt-6 p-6 text-white text-6xl'><span className='text-sky-500'><strong>Hi.</strong></span> I am Dane Cronin</h1>
 
                 </div>
 
@@ -28,7 +27,7 @@ const Home = (props) => {
 
 
                 <a name='about' href="#about" onClick={aboutBtnHandler}
-                    className="text-sky-500 text-3xl px-6 py-3 my-2 flex justify-center duration-300 hover:scale-105 rounded-md cursor-pointer"
+                    className="text-sky-500 text-3xl px-6 py-3 my-2 flex justify-center duration-300 hover:scale-105 cursor-pointer"
                 >
                     Learn More
                 </a>

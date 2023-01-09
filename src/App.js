@@ -42,7 +42,7 @@ function App() {
           if(el.className === 'active') el.className = 'not';
         }
       }
-      document.querySelector('a[name="about"]').className = 'active';
+      document.querySelector('[name="about"]').className = 'active';
     }
   }
 

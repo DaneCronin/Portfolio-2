@@ -4,7 +4,6 @@ import React from 'react';
 //Import Icons for Contact links
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import {FiPhone} from 'react-icons/fi';
 
 // Component initialization
 function Footer () {
@@ -15,7 +14,7 @@ function Footer () {
         id: 1,
         child: (
             <>
-              Mail <HiOutlineMail size={32} />
+              Mail <HiOutlineMail size={42} />
             </>
           ),
       name: 'email',
@@ -26,27 +25,16 @@ function Footer () {
       name: 'github',
       child: (
         <>
-          GitHub <FaGithub size={32} />
+          GitHub <FaGithub size={42} />
         </>
       ),
       href: 'https://github.com/DaneCronin'
     },
     {
-        id: 3, 
+        id: 3,
         child: (
             <>
-            Phone <FiPhone size={32}/>
-            </>
-        ),
- 
-      name: 'phone',
-      href: 'tel: 978.609.6117'
-    },
-    {
-        id: 4,
-        child: (
-            <>
-              Linkedin <FaLinkedin size={32} />
+              Linkedin <FaLinkedin size={42} />
             </>
           ),
       name: 'linkedin',
@@ -56,17 +44,17 @@ function Footer () {
 
   // JSX
   return (
-    <footer className='footer sticky-bottom'>
+    <footer className='footer flex flex-col p-2'>
       
 
 
-      <div className="hidden lg:flex flex-col top-[70%] fixed">
+      <div className="hidden lg:flex top-[70%] fixed">
       <ul>
         {icons.map(({ id, child, href, style}) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-700 bg-zinc-900" +
+              "flex justify-between items-center w-40 h-14 px-3 py-2 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-700 bg-transparent" +
               " " +
               style
             }
@@ -84,7 +72,7 @@ function Footer () {
       </ul>
     </div>
 
-    <p>Designed and Developed by Dane Cronin ©2022</p>
+    <p className="sm:text-sm p-3">Designed and Developed by Dane Cronin &copy; {new Date().getFullYear()}</p>
     
     </footer>
   );

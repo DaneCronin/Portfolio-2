@@ -41,10 +41,10 @@ function ContactForm() {
 
     //Return JSX to display
     return (
-      <section id="contact">
+      <section name='contact' id="contact">
       
-      <div className="mt-10 flex flex-col p-8 justify-content-center max-w-screen-lg mx-auto">
-        <div className="pb-8">
+      <div className="mt-15 flex flex-col w-3/4 p-4 justify-center mx-auto">
+        <div className="pb-8 text-center">
           <p className="text-4xl font-bold inline border-b-4">
             Contact
           </p>
@@ -54,7 +54,7 @@ function ContactForm() {
           <form
             onSubmit={handleSubmit}
             action="mailto:danecronin@gmail.com"
-            className="flex flex-col w-full md:w-1/2"
+            className="flex flex-col w-full mx-auto md:w-3/4 sm:w-1/2"
           >
             <input
               type="text"

@@ -9,44 +9,43 @@ import {
     DiGithubBadge,
     DiCss3,
     DiHtml5,
-    DiPhotoshop,
   } from "react-icons/di";
-  import {SiTailwindcss} from 'react-icons/si';
+  import {SiTailwindcss, SiGraphql} from 'react-icons/si';
  
   function TechSkill () {
 
     return (
-        <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-8 px-4 flex text-sky-500">
+        <div className="grid  grid-cols-2 md:grid-cols-3 gap-y-4 mt-8 auto-rows-max text-sky-500 ">
         
-          <div className='duration-300 hover:scale-105'>
-            <DiJavascript1 size= {64} />
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiJavascript1 size={92} />
           </div>
-          <div className='duration-300 hover:scale-105'>
-            <DiNodejs size= {64}/>
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiNodejs size= {92}/>
           </div>
-          <div className='duration-300 hover:scale-105'>
-            <DiReact size= {64} />
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiReact size= {92} />
           </div>
-          <div className= 'duration-300 hover:scale-105'>
-            <DiMongodb size= {64}/>
+          <div className= 'align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiMongodb size= {92}/>
           </div>
          
-          <div className='duration-300 hover:scale-105'>
-            <DiGithubBadge size= {64}/>
+          <div className='align-center  p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiGithubBadge size= {92}/>
           </div>
         
-          <div className='duration-300 hover:scale-105'>
-            <DiCss3 size= {64}/>
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiCss3 size= {92}/>
           </div>
 
-          <div className='duration-300 hover:scale-105'>
-            <DiHtml5 size= {64}/>
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <DiHtml5 size= {92}/>
           </div>
-          <div className='duration-300 hover:scale-105'>
-            <DiPhotoshop size= {64}/>
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <SiGraphql size= {92}/>
           </div>
-          <div className='duration-300 hover:scale-105'>
-            <SiTailwindcss size= {64}/>
+          <div className='align-center p-4 mx-auto md:shadow-md duration-300 hover:scale-105 hover:shadow-sky-400'>
+            <SiTailwindcss size= {92}/>
           </div>
         </div>
       );

@@ -41,7 +41,7 @@ const Portfolio = () => {
     {
       id: 4,
       image: BookSearch,
-      languages: 'JS, WEBPACK, ',
+      languages: 'JS, WEBPACK',
       appName: "Book-Search",
       repoLink: "https://github.com/DaneCronin/Book-Search",
       deploy: "https://stormy-ridge-01724.herokuapp.com/",
@@ -67,10 +67,10 @@ const Portfolio = () => {
 
   //JSX to display 
   return (
-    <section id="projects">
-    <div name="portfolio" className="md:h-screen mt-8 py-6 mb-8">
-      <div className="max-w-screen-lg p-3 mx-auto flex flex-col justify-content-center">
-        <div className="pb-8">
+    <section id="projects" className="justify-center mx-auto">
+    <div name="projects" className="mt-15 p-4 mb-8">
+      <div className="mx-auto flex flex-col w-3/4 justify-center">
+        <div className="pb-8 text-center">
           <h1 className="text-4xl font-bold inline border-b-4 border-grey-800">
             Portfolio Projects
           </h1>
@@ -79,9 +79,9 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {projectPortfolio.map(({ id, image, languages, appName, repoLink, deploy }) => (
-            <div key={id} className="shadow-md shadow-slate-600 rounded-md duration-300 hover:scale-105 ">
+            <div key={id} className="w-full shadow-md shadow-slate-600 rounded-md duration-300 hover:scale-105 hover:shadow-sky-500">
               <div>
                 <img
                   src={image}
@@ -98,15 +98,15 @@ const Portfolio = () => {
                 <a target="_blank" rel="noreferrer"
                   href={repoLink}
                   className="project-button duration-300 hover:scale-105 rounded-md"
-                >
-                  <BsGithub/> GitHub
+                ><span className="flex items-center">
+                  <BsGithub/> </span> GitHub
                 </a>
-
+          
                 <a target="_blank" rel="noreferrer"
                   href={deploy}
                   className="project-button duration-300 hover:scale-105 rounded-md"
-                >
-                  <CgWebsite/> Demo
+                ><span className="flex items-center">
+                  <CgWebsite/></span> Demo
                 </a>
               </div>
             </div>
