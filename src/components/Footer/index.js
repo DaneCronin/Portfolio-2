@@ -38,7 +38,7 @@ function Footer () {
             </>
           ),
       name: 'linkedin',
-      href: 'https://www.linkedin.com/in/dane-cronin-b9721032/'
+      href: 'https://www.linkedin.com/in/dane-c-b9721032/'
     }
   ];
 
