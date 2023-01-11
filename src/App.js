@@ -7,7 +7,8 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
+import Resume from './components/Resume'
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
           if(el.className === 'active') el.className = 'not';
         }
       }
-      document.querySelector('a[name="about"]').className = 'active';
+      document.querySelector('[name="about"]').className = 'active';
     }
   }
 
@@ -60,6 +61,8 @@ function App() {
             ? <Projects />
             : contactSelected === 'contact'
               ? <ContactForm />
+              : contactSelected === 'resume'
+              ? <Resume/>
               :
               <Home />}
         <Footer/>
