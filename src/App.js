@@ -51,6 +51,7 @@ function App() {
     <main>
 
       <Home aboutBtnHandler = {aboutBtnHandler} />
+      
 
       <NavBar
         navSelect={selectedHandler}

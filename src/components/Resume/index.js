@@ -5,7 +5,7 @@ import TechSkill from '../About/Techskills';
 
 const Resume = () => {
     return (
-        <section id='resume' name='resume' className="p-4 mb-8 mt-15 mx-auto justify-center w-3/4">
+        <section id='resume' name='resume' className="p-4 mb-8  mx-auto justify-center w-3/4">
            
                 <div>
                     <div className="pb-8 text-center">
@@ -14,10 +14,9 @@ const Resume = () => {
                         </h1>
                     </div>
                    
-                    <div className='p-4 text-center'>
-                        <p>
-                            Resume coming SOON!
-                        </p>
+                    <div className='p-4 flex text-center'>
+                        
+                        <a className="text-100 w-1/4 text-center bg-zinc-900  px-6 py-3 my-8 mx-auto rounded-md hover:scale-110 duration-700" href={require('../../assets/Docs/DaneCroninResume.pdf')} download>Download Resume</a>
                     </div>
                 </div>
                 <div className="gap-8 p-4 justify-center mx-auto text-center my-3">

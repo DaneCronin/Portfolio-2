@@ -68,7 +68,7 @@ const Portfolio = () => {
   //JSX to display 
   return (
     <section id="projects" className="justify-center mx-auto">
-    <div name="projects" className="mt-15 p-4 mb-8">
+    <div name="projects" className="p-4 mb-8">
       <div className="mx-auto flex flex-col w-3/4 justify-center">
         <div className="pb-8 text-center">
           <h1 className="text-4xl font-bold inline border-b-4 border-grey-800">
