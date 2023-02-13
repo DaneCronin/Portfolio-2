@@ -94,7 +94,7 @@ This project was built using these technologies.
 
   Email: DaneCronin@gmail.com
 
-  Link to repo on GitHub: https://github.com/DaneCronin/Book-Search
+  Link to repo on GitHub: https://github.com/DaneCronin/Portfolio-2
 
 
 
