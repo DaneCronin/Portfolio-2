@@ -22,7 +22,7 @@
   * [Questions?](#questions)
 
   ## Description
-   This is a fully-responsive portfolio I designed and built with React to showcase the latest projects I have been working on.
+   This is a fully-responsive portfolio I designed and built with React to provide my contact info and showcase the latest projects I have been working on.
    
   ## Installation
  
@@ -57,7 +57,6 @@ This project was built using these technologies.
 
 - React.js
 - Node.js
-- Express.js
 - TailwindCss
 - CSS3
 - JS
@@ -66,7 +65,6 @@ This project was built using these technologies.
 
 ## Features
 
-**📖 Multi-Page Layout**
 
 **🎨 Styled with Tailwind CSS**
 
